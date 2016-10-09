@@ -46,8 +46,6 @@
 
   <% if(theme.icon) { %>
   <link href="<%= theme.icon %>" rel="icon" />
-  <% } else { %>
-  <link href="<%- config.root %>css/images/favicon.ico" rel="icon" />
   <% } %>
 
   <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">

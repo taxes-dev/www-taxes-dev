@@ -12,6 +12,7 @@ widgets:
 - tagcloud
 
 fancybox: true
+gallery: false
 
 rss: 
 icon: 

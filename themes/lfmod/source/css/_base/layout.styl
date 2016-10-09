@@ -10,10 +10,15 @@ body
   color color-font
   font-size 1.4rem
   text-shadow 1px 1px 1px rgba(0,0,0,0.5)
+  background-image img-background
+  background-color color-background
+  background-repeat no-repeat
+  background-position center
+  background-size cover
   @media screen and (max-width: 1260px)
     margin 0 30px
   @media screen and (max-width: 600px)
-    font-size 13px
+    font-size 1rem
 
 
 h1, h2, h3, h4, h5, h6
@@ -55,19 +60,3 @@ a
 #main-col
   flex-basis 75%
   order 0
-
-#wrapper
-    
-#bg
-  background-image img-background
-  background-color color-background
-  background-attachment fixed
-  background-repeat no-repeat
-  background-position center
-  background-size cover
-  height 100%
-  left 0
-  position fixed
-  top 0
-  width 100%
-  z-index -1

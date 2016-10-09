@@ -1,7 +1,9 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="<%- config.root %>js/script.js"></script>
 <script src="<%- config.root %>js/jquery.imagesloaded.min.js"></script>
+<% if (theme.gallery) { %>
 <script src="<%- config.root %>js/gallery.js"></script>
+<% } %>
 
 <% if (theme.fancybox){ %>
 <link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
@@ -12,5 +14,3 @@
 })(jQuery);
 </script>
 <% } %>
-
-<div id='bg'></div>
