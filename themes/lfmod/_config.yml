@@ -11,13 +11,7 @@ widgets:
 - tag
 - tagcloud
 
-# Duoshuo
-duoshuo_shortname: 
-
 fancybox: true
 
-google_analytics:
 rss: 
-google_site_verification: 
-baidu_site_verification: 
 icon: 
