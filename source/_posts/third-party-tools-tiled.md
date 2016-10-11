@@ -1,0 +1,23 @@
+---
+title: 'Third party tools: Tiled'
+date: 2016-10-10 18:46:18
+tags:
+    - c++
+    - critterbits
+    - tools
+---
+In order to save time in programming my game engine, I'm relying heavily on third party libraries and tools. Probably my biggest dependency is the [Tiled map editor](http://www.mapeditor.org/). Tiled is an open source project and is an extremely powerful tool for creating tile-based maps. It also has an open file standard that [many people have written libraries for](http://doc.mapeditor.org/reference/support-for-tmx-maps/).
+
+<a href="{% asset_path tiled-map-editor.jpg %}" class="fancybox">{% asset_img tiled-map-editor-t.jpg %}</a>
+<!-- more -->
+The screenshot above shows my test map loaded into the editor. It has a lot of ready-made features like layers and painting tools. It also allows you to specify custom properties on layers and map objects, which I use for a variety of engine-specific data points. I remember programming a similar tool in Java many years ago and it took quite a bit of work just to get to the point where I could paint tiles in a grid, so having an off-the-shelf solution like this was perfect.
+
+Additionally, since there were so many frameworks to choose from that could parse Tiled's .tmx format, it was pretty easy to get my prototype working with Tiled maps quickly. All I had to write was the rendering code. Initially, I used [TMX C Loader](https://github.com/baylej/tmx/) since it was pretty lightweight and already had an SDL-based example for doing the rendering part. My first draft of my tilemap renderer was essentially a modified example from this repository. (As an aside, I tend to default to using C libraries rather than C++ despite the engine being written in C++... I'll probably do a separate post about that sometime later.) This worked really great at first... until I tried to get it working on Windows.
+
+I didn't start doing Windows builds until about a month into the project, so I already had quite a bit of code in place, which was probably my first mistake, but I didn't want to distract myself with porting things until I had a small prototype working. Anyways, getting TMX C Loader to work on Windows wasn't as straightforward as I hoped. While the library itself had no issues in portability, it brought in a dependency on [libxml2](http://www.xmlsoft.org/). Supposedly libxml2 is also portable, but I had a hell of a time getting it to compile in all the configurations I needed under Visual Studio 2015. So it was back to the drawing board.
+
+Eventually I settled on [tmxparser](https://github.com/andrewrk/tmxparser), which is an actual C++ implementation that depends on [TinyXML](http://www.grinninglizard.com/tinyxml/). I had a much easier time getting this combination to compile on every platform and configuration that I want to support (currently Linux and Windows for both 32-bit and 64-bit). The structure of tmxparser's API was quite different to TMX C Loader, so I did end up rewriting a substantial part of my tilemap implementation, but in the end it all worked out. The only issue I ran into is that tmxparser never implemented support for layer offsets, so I had to patch that in myself, but that's the great thing about open source: I was able to patch the library in a few minutes and keep going.
+
+For the same reasons as above, I also ended up swapping another library I was using, which was [LibYAML](http://pyyaml.org/wiki/LibYAML). I've always appreciated [YAML's brevity and expressiveness](http://yaml.org/) for configuration files, so a lot of my game configuration data was stored in YAML files. After having some porting issues with LibYAML, I did some more research on different markup languages that could support my engine. Through this, I discovered [TOML](https://github.com/toml-lang/toml), which seemed to solve a lot of the same problems that YAML did. So I tried out [cpptoml](https://github.com/skystrife/cpptoml) as a dependency and rewrote my configuration files, and now everything works amazingly well.
+
+Using these third party tools, I was able to get my prototype to a viable state much faster than if I had stopped to do the tooling myself. This is the hybrid approach that I talked about in my previous post about choosing C++ and SDL2 over an off-the-shelf engine; it's just flexible enough that I can make it do what I want, but I still save hundreds or even thousands of hours of work. Sometimes it means making a few compromises and accepting the limitations of what I can find that's already built, but so far I've been very happy with the solutions I've discovered.

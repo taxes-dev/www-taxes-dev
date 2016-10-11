@@ -13,6 +13,7 @@ widgets:
 
 fancybox: true
 gallery: false
+search: false
 
 rss: 
 icon: 
