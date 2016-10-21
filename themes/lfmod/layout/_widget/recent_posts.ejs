@@ -5,6 +5,7 @@
     <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
       <li>
         <a href="<%= config.root %><%= post.path %>"><%= post.title %></a>
+        <div class="recent-post-date"><%- date(post.date, 'MMM DD YYYY')%></div>
       </li>
     <% }); %>
   </ul>
