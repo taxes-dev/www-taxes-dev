@@ -33,6 +33,14 @@ if (page.archive){
               <h1 class="title"><a href="<%- config.root %><%- item.path %>"><%= item.title %></a></h1>
             <% } %>
           </header>
+          <div class="entry">
+            <%- item.excerpt %>
+          </div>
+          <footer>
+            <div class="alignleft">
+              <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= __('more') %></a>
+            </div>
+          </footer>
         </div>
       </article>
     <% }); %>
