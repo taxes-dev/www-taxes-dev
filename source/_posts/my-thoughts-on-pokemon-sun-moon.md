@@ -1,6 +1,7 @@
 ---
 title: My thoughts on Pokémon Sun & Moon
 date: 2016-11-26 11:57:23
+card_image: /2016/11/26/my-thoughts-on-pokemon-sun-moon/alola.jpg
 tags:
     - games
     - pokemon
