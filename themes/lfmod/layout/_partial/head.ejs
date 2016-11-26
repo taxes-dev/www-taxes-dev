@@ -40,7 +40,7 @@
 
   <% if(page.cover) { %>
     <meta property="og:image" content="<%= page.cover %>" />
-  <% } else { %>
+  <% } else if (config.cover) { %>
     <meta property="og:image" content="<%= config.cover %>" />
   <% } %>
 
