@@ -26,8 +26,8 @@
     <% } %>
     <footer>
         <div class="alignright">
-          <% if (false && item.comments){ %>
-          <a href="<%- url_for(item.path) %>#comment" class="comment-link">评论</a>
+          <% if (item.comments){ %>
+          <a href="<%- url_for(item.path) %>#comment" class="comment-link"><span class="disqus-comment-count" data-disqus-identifier="/<%- item.path %>">0 Comments</span></a>
           <% } %>
         </div>
         <%- partial('post/category') %>
@@ -37,6 +37,4 @@
   </div>
 </article>
 
-<% if (false) { %>
 <%- partial('comment', {post: item}) %>
-<% } %>
