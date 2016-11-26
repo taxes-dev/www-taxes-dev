@@ -59,7 +59,7 @@
   <% if (page.card_image) { %>
   <meta name="twitter:image" content="http://taxes.moe<%= url_for(page.card_image) %>">
   <% } else { %>
-  <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/783414747966300160/oZQV3HTy_400x400.jpg">
+  <meta name="twitter:image" content="http://taxes.moe/twitter_400x400.jpg">
   <% } %>
 
   <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">
