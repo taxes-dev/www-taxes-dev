@@ -20,12 +20,12 @@
   <% if (page.description){ %>
   <meta name="description" content="<%= page.description %>">
   <meta name="twitter:description" content="<%= page.description %>">
-  <% } else if (config.description){ %>
-  <meta name="description" content="<%= config.description %>">
-  <meta name="twitter:description" content="<%= config.description %>">
   <% } else if (page.excerpt){ %>
   <meta name="description" content="<%= truncate(strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, ''),  {length: 140, omission: '...'}) %>">
   <meta name="twitter:description" content="<%= truncate(strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, ''), {length: 140, omission: '...'}) %>">
+  <% } else if (config.description){ %>
+  <meta name="description" content="<%= config.description %>">
+  <meta name="twitter:description" content="<%= config.description %>">
   <% } %>
 
   <% if (page.keywords){ %>
