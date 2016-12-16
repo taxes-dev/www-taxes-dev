@@ -10,7 +10,7 @@ tags:
 ---
 I'm a ball of useless, sickly foxgirl right now, so I don't have many meaty updates today. I'm mostly just sitting here watching YouTube and playing games. But I had a few things I wanted to talk about.
 
-# Critterbits 32-bit versus 64-bit
+## Critterbits 32-bit versus 64-bit
 
 So far I've maintained both 32-bit and 64-bit builds of my game engine up to this point. I'm not really even sure why I felt that it was necessary. I think it's just been tradition to support both for so many years that I didn't even think about it. Apparently the [most recent Steam update for Linux dropped 32-bit support](https://www.gamingonlinux.com/articles/32-bit-linux-distributions-are-no-longer-supported-by-steam-steam-web-browser-disabled.8745), so it made me stop and think about it for a minute.
 <!-- more -->
@@ -20,7 +20,7 @@ But what about 32-bit Windows? I need to do some more research on this one. I kn
 
 Obviously wider support is always better, and I would love to compile my software for as many systems as possible, but that also means testing and making sure they work well. As an indie developer, I have to pick and choose my battles. Since I'm primarily working on Linux, it's already a huge time investment to keep the builds working on Windows as well. Supporting 32-bit on both platforms is starting to look less and less like a good investment of my time.
 
-# Pokémon Stars
+## Pokémon Stars
 
 Apparently rumors are swirling of [a possible _Pokémon Stars_ to follow up on _Sun & Moon_](http://www.eurogamer.net/articles/2016-11-18-nintendo-switch-will-get-pokemon-sun-and-moon-version) in traditional third-game style for the Pokémon series. Of particular note with this one is that the rumors also say that it will be coming to the new home console, the Nintendo Switch. Some people have blown this off as speculative nonsense, but I think there's some truth to this rumor. Here's just a few things I've been thinking about that lend credence to the rumor of Pokémon coming to Nintendo Switch:
 
@@ -33,7 +33,7 @@ Apparently rumors are swirling of [a possible _Pokémon Stars_ to follow up on _
 
 Of course, this could all just be pointers to a follow-up on the 3DS itself, but especially with regards to the first bullet point, I feel like Game Freak is gearing up for something bigger and better. Or maybe that's just wishful thinking on my part. I was already going to buy a Nitendo Switch (unabashed Nintendo fangirl here), but if a new Pokémon game comes out for the system, that buy becomes a 100% no-brainer for me.
 
-# Fantasy Life
+## Fantasy Life
 
 So why am I mentioning a random two-year-old game here (four if you live in Japan)? My wife and I were looking for some good co-op games to play together, lamenting the fact that _Pokémon Sun & Moon_ still doesn't have any good co-op options outside of multi-battles. We did some research (which mostly involved watching of Let's Play videos) and settled on this little gem.
 
