@@ -3,7 +3,7 @@ title: Time to start the new year with a challenge
 date: 2017-01-02 11:22:41
 card_image: /2017/01/02/time-to-start-the-new-year-with-a-challenge/rockys-boots-2.png
 tags:
-    - 30 day game dev challenge
+    - 30 day video game challenge
     - games
     - holidays
 ---
