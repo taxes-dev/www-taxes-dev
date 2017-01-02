@@ -10,6 +10,7 @@
       <% } %>
       <%- partial('post/title') %>
     </header>
+    <% if (!archive) { %>
     <div class="entry">
       <% if (item.excerpt && index){ %>
         <%- item.excerpt %>
@@ -23,6 +24,7 @@
         <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= __('more') %></a>
       </div>
     </footer>
+    <% } %>
     <% } %>
     <footer>
         <div class="alignright">
