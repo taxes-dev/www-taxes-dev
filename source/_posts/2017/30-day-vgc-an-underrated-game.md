@@ -5,6 +5,7 @@ card_image: /2017/01/04/30-day-vgc-an-underrated-game/no-mans-sky.jpg
 tags:
     - 30 day video game challenge
     - games
+    - no man's sky
 ---
 I had a tough time with this one. I could name any number of just obscure titles that I think deserve more attention, but honestly when I think "underrated," I think of titles that maybe were unfairly rated by critics and community, leading to a cascade effect of new players not even trying the game because of popular opinion. For this entry I'm going to pick _No Man's Sky_, which I'm sure will peeve some people, but I think was deserving of more praise _as a game_ than it received. There is a definite swirl of controversy around the game's developers and marketing that I won't even begin to address here, because it's honestly secondary to talking about the game itself.
 

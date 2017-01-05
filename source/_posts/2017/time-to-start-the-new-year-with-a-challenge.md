@@ -4,8 +4,11 @@ date: 2017-01-02 11:22:41
 card_image: /2017/01/02/time-to-start-the-new-year-with-a-challenge/rockys-boots-2.png
 tags:
     - 30 day video game challenge
+    - age of empires
+    - destiny
     - games
     - holidays
+    - retro
 ---
 Originally I had planned to work on my Critterbits engine over the holiday break, but then as I got into the past week I realized that it had been a very long time since I had allowed myself to just _do nothing_. I can't overstate the power of just having time without obligations every once in a while to reset yourself and reduce stress, and the changeover from 2016 to 2017 seemed like an apropos time to do so. I spent time with my family over Hanukkah and played _Dungeons & Dragons_ with my friends. I relaxed and caught up with my favorite YouTube series. I played games. Nothing I did really felt like work, and I tried my best not to plan out my time, which was the biggest factor in actually being able to unwind.
 
