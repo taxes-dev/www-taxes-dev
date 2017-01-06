@@ -1,6 +1,7 @@
 ---
 title: '30-day VGC: My guilty pleasure game'
 date: 2017-01-05 08:40:01
+card_image: /2017/01/05/30-day-vgc-my-guilty-pleasure-game/destiny-rise-of-iron.jpg
 tags:
     - 30 day video game challenge
     - destiny
