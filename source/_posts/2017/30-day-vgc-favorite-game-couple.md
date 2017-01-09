@@ -1,6 +1,7 @@
 ---
 title: '30-day VGC: Favorite game couple'
 date: 2017-01-08 09:47:40
+card_image: /2017/01/08/30-day-vgc-favorite-game-couple/shepard-garrus.jpg
 tags:
     - 30 day video game challenge
     - dragon age
