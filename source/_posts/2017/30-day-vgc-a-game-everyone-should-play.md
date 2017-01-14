@@ -1,7 +1,7 @@
 ---
 title: '30-day VGC: A game everyone should play'
 date: 2017-01-13 08:51:56
-card_image:
+card_image: /2017/01/13/30-day-vgc-a-game-everyone-should-play/golden-sun.jpg
 tags:
     - 30 day video game challenge
     - games
