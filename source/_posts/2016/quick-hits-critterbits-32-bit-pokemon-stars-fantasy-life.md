@@ -6,7 +6,7 @@ tags:
     - critterbits
     - fantasy life
     - games
-    - pokemon
+    - pokémon
 ---
 I'm a ball of useless, sickly foxgirl right now, so I don't have many meaty updates today. I'm mostly just sitting here watching YouTube and playing games. But I had a few things I wanted to talk about.
 

@@ -4,7 +4,7 @@ date: 2016-11-26 11:57:23
 card_image: /2016/11/26/my-thoughts-on-pokemon-sun-moon/alola.jpg
 tags:
     - games
-    - pokemon
+    - pokémon
 ---
 While I won't call this a review by any stretch of the imagination, I did want to share my experience with the recently released _Pokémon Sun & Moon_. Pokémon is one of my favorite game franchies, so I was really excited to get the latest entry in the series. With each new iteration, it's interesting to see how the game evolves and changes, and I think _Sun & Moon_ mark one of the biggest evolutions in the franchise since the original _Ruby & Sapphire_ back in 2003.
 
