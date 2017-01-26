@@ -1,7 +1,7 @@
 ---
 title: '30-day VGC: Game with the best graphics or art style'
 date: 2017-01-24 08:02:49
-card_image:
+card_image: /2017/01/24/30-day-vgc-game-with-the-best-graphics-or-art-style/yoshi.jpg
 tags:
     - 30 day video game challenge
     - games
