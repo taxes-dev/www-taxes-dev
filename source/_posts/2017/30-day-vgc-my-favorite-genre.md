@@ -4,6 +4,9 @@ date: 2017-01-21 10:10:01
 card_image: /2017/01/21/30-day-vgc-my-favorite-genre/dragon-warrior.jpg
 tags:
     - 30 day video game challenge
+    - borderlands
+    - dragon quest
+    - dragon warrior
     - games
 ---
 I've been gaming for a number of years now, and over the course of time my tastes have changed. Ever since I first experienced _Final Fantasy_ on the NES, my favorite genre was RPGs. I loved the 8- and 16-bit JRPGs, and when I started gaming more on PCs I found a long list of great RPGs, especially from EA/BioWare. _Neverwinter Nights_, _Knights of the Old Republic_, _Dragon Age_, and _Mass Effect_ are all full of great gaming memories for me.
