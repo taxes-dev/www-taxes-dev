@@ -8,12 +8,11 @@ widgets:
 - search
 - category
 - recent_posts
-- tag
 - tagcloud
 
 fancybox: true
 gallery: false
-search: false
+search: true
 
 rss: 
 icon: 
