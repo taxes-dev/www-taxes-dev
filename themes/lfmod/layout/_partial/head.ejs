@@ -39,12 +39,6 @@
   <% if (page.title){ %><meta property="og:title" content="<%= page.title %>" /><% } %>
   <meta property="og:site_name" content="<%= config.title %>">
 
-  <% if(page.cover) { %>
-    <meta property="og:image" content="<%= page.cover %>">
-  <% } else if (config.cover) { %>
-    <meta property="og:image" content="<%= config.cover %>">
-  <% } %>
-
   <% if(theme.icon) { %>
   <link href="<%= theme.icon %>" rel="icon" />
   <% } %>
@@ -58,8 +52,10 @@
   <% } %>
   <% if (page.card_image) { %>
   <meta name="twitter:image" content="http://taxes.moe<%= url_for(page.card_image) %>">
+  <meta name="og:image" content="http://taxes.moe<%= url_for(page.card_image) %>">
   <% } else { %>
   <meta name="twitter:image" content="http://taxes.moe/twitter_400x400.jpg">
+  <meta name="og:image" content="http://taxes.moe/twitter_400x400.jpg">
   <% } %>
 
   <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">
