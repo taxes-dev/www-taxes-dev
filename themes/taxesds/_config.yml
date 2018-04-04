@@ -1,0 +1,19 @@
+menu:
+  Home: /
+  Archives: /archives
+  About: /about
+
+sidebar: right
+
+widgets:
+- search
+- category
+- recent_posts
+- tagcloud
+
+fancybox: true
+gallery: false
+search: true
+
+rss: 
+icon: 

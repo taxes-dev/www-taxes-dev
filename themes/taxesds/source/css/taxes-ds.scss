@@ -1,0 +1,48 @@
+/***
+ * Taxes design system - root style sheet
+ */
+ @charset "utf-8";
+ @import "variables";
+ @import "components/mixins";
+ @import "components/reset";
+ @import "components/typography";
+ @import "components/links";
+ // components above this line are the minimum required for the system to work
+ // below this line you can pick and choose what you want
+ @import "components/grid";
+ @import "components/forms";
+ @import "components/deco";
+ @import "components/card";
+ @import "components/tabs";
+ @import "components/nav";
+
+ // extends some of the typography elements to override the plain markup emitted by hexo
+.post .post-content .entry {
+    p {
+        @extend .txs--p;
+    }
+    h1, h2 {
+        @extend .txs--h4;
+    }
+    h3 {
+        @extend .txs--h5;
+    }
+    h4, h5, h6 {
+        @extend .txs--h6;
+    }
+    code {
+        @extend .txs--tt;
+    }
+    ul {
+        @extend .txs--ul;
+        li {
+            @extend .txs--ul__li;
+        }
+    }
+    ol {
+        @extend .txs--ol;
+        li {
+            @extend .txs--ol__li;
+        }
+    }
+}

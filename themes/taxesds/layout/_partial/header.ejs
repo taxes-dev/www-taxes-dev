@@ -1,0 +1,19 @@
+<div class="txs--grid">
+  <div class="txs--grid__row">
+    <div id="site-title" class="txs--grid__column">
+      <h1 class="txs--h3"><a href="<%- config.root %>"><%= config.title %></a></h1>
+      <h4 class="txs--h4"><a href="<%- config.root %>"><% if (config.subtitle){ %><%= config.subtitle %><% } %></a></h4>
+    </div>
+  
+    <div class="txs--grid__column">
+      <nav id="main-nav" class="txs--nav">
+          <div class="txs--nav__mobile-trigger">☰</div>
+          <div class="txs--nav__items">
+          <% for (var i in theme.menu){ %>
+            <a href="<%- theme.menu[i] %>" class="txs--nav__items__item"><%= i %></a>
+          <% } %>
+          </div>
+      </nav>
+    </div>
+  </div>
+</div>

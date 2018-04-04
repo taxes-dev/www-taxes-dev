@@ -4,7 +4,6 @@
 
 # Site
 title: "It's Taxes"
-subtitle: "I am here to make you think about death and get sad and stuff."
 description: "A blog mostly about video games but also some other stuff that I really want to talk about."
 author: "Havi S."
 language: en
@@ -63,7 +62,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: lfmod
+theme: taxesds
 feed:
     type: atom
     path: atom.xml
@@ -74,3 +73,8 @@ feed:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+# SASS plugin
+node_sass:
+  includePaths:
+    - node_modules/taxes-ds/sass

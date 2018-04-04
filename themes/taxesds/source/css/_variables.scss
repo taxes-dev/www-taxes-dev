@@ -1,0 +1,183 @@
+/*** 
+ * Taxes design system - variables
+ *
+ * Override these to customize perceptual design.
+ */
+
+/*** General */
+$txs-namespace: "txs";
+$txs-body-background-color: #000000;
+$txs-body-text-color: rgba(255, 255, 255, 0.9);
+
+/*** Typography */
+$txs-font-path: "../fonts"; // relative to CSS output folder
+$txs-font-use-fira-sans: false; // controls whether or not to import Fira Sans type face
+$txs-font-use-fira-mono: false; // controls whether or not to import Fira Mono type face
+$txs-body-text-font: "Fira Sans", Arial, Helvetica, sans-serif;
+$txs-body-header-font: "Fira Sans", Arial, Helvetica, sans-serif;
+$txs-body-monospace-font: "Fira Mono", monospace;
+$txs-body-text-size: 16px;
+$txs-body-text-line-height: 1.5em;
+$txs-body-padding: 1em 2em;
+$txs-h1-margin: 0.5em 0 0 0;
+$txs-h1-font-size: 3.5rem;
+$txs-h1-line-height: 1.2em;
+$txs-h2-margin: 0.4em 0 0 0;
+$txs-h2-font-size: 3rem;
+$txs-h2-line-height: 1.2em;
+$txs-h3-margin: 0.3em 0 0 0;
+$txs-h3-font-size: 2.5rem;
+$txs-h3-line-height: 1.2em;
+$txs-h4-margin: 0;
+$txs-h4-font-size: 2rem;
+$txs-h4-line-height: 1.2em;
+$txs-h5-margin: 0;
+$txs-h5-font-size: 1.5rem;
+$txs-h5-line-height: 1.5em;
+$txs-h6-margin: 0;
+$txs-h6-font-size: 1rem;
+$txs-h6-line-height: 1.5em;
+$txs-p-font-size: 1rem;
+$txs-p-line-height: 1.8rem;
+$txs-p-margin: 0 0 2em 0;
+$txs-blockquote-font-size: 1rem;
+$txs-blockquote-line-height: 1.8rem;
+$txs-blockquote-margin: 1em 2em 2em 2em;
+$txs-pre-font-size: 1rem;
+$txs-pre-line-height: 1rem;
+$txs-pre-margin: 0;
+$txs-ul-list-style-type: disc;
+$txs-ul-margin: 1em 0 2em 2em;
+$txs-ul-li-font-size: 1rem;
+$txs-ul-li-line-height: 2rem;
+$txs-ul-nested-margin: 0 0 0 2em;
+$txs-ul-nested-list-style-type: circle;
+$txs-ol-list-style-type: decimal;
+$txs-ol-margin: 1em 0 2em 2em;
+$txs-ol-li-font-size: 1rem;
+$txs-ol-li-line-height: 2rem;
+$txs-ol-nested-1-margin: 0 0 0 2em;
+$txs-ol-nested-1-list-style-type: lower-latin;
+$txs-ol-nested-2-margin: $txs-ol-nested-1-margin;
+$txs-ol-nested-2-list-style-type: lower-roman;
+$txs-dl-margin: 1em 2em 2em 2em;
+$txs-dl-dt-margin: 0;
+$txs-dl-dt-font-size: 1rem;
+$txs-dl-dt-line-height: 2rem;
+$txs-dl-dd-margin: 0 0 2em 0;
+$txs-dl-dd-font-size: 1rem;
+$txs-dl-dd-line-height: 1.8rem;
+
+/*** Breakpoints */
+$txs-grid-bp-single-column: 800px; // at this width and below, grids will stack into a single columnn
+$txs-card-bp-interior-single-column: 800px; // at this width and below, cards will show images and content in a column rather than side-by-side
+$txs-card-bp-no-two-up: 1100px; // at this width and below, the 2-up feature of cards is disabled
+$txs-tabs-header-bp-single-column: 460px; // at this width and below, tab headers will stack into a single column
+$txs-nav-bp-mobile: 900px; // at this width and below, the mobile "hamburger" menu will be used instead of a row of links
+
+/*** Grids */
+$txs-grid-container-min-width: 320px;
+$txs-grid-container-max-width: 1200px;
+$txs-grid-row-outline-width: 1px;
+$txs-grid-row-outline-color: rgba(255, 255, 255, 0.7);
+$txs-grid-column-outline-width: 1px;
+$txs-grid-column-outline-color: rgba(255, 255, 255, 0.7);
+$txs-grid-row-gutter: 40px;
+$txs-grid-column-gutter: 20px;
+$txs-grid-column-padding: 10px;
+
+/*** Links */
+$txs-link-color: orange;
+$txs-link-color-hover: white;
+$txs-link-color-active: white;
+
+/*** Buttons */
+$txs-button-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+$txs-button-border-radius: 5px;
+$txs-button-padding: 0.5em 1em;
+$txs-button-spacing: 20px; // space between multiple buttons in the same flow
+$txs-button-text-font: $txs-body-text-font;
+$txs-button-text-size: 1rem;
+// default button
+$txs-button-background-color: transparent;
+$txs-button-border-color: rgba(255, 255, 255, 0.9);
+$txs-button-text-color: rgba(255, 255, 255, 0.9);
+$txs-button-active-background-color: rgba(255, 255, 255, 0.9);
+$txs-button-active-border-color: $txs-button-border-color;
+$txs-button-active-text-color: black;
+$txs-button-focus-background-color: $txs-button-background-color;
+$txs-button-focus-border-color: orange;
+$txs-button-focus-text-color: $txs-button-text-color;
+// primary button
+$txs-button-primary-background-color: orange;
+$txs-button-primary-border-color: orange;
+$txs-button-primary-text-color: rgba(255, 255, 255, 0.9);
+$txs-button-primary-focus-background-color: $txs-button-primary-background-color;
+$txs-button-primary-focus-border-color: rgba(255, 255, 255, 0.9);
+$txs-button-primary-focus-text-color: $txs-button-primary-text-color;
+$txs-button-primary-active-background-color: $txs-button-primary-background-color;
+$txs-button-primary-active-border-color: $txs-button-primary-border-color;
+$txs-button-primary-active-text-color: black;
+// secondary button
+$txs-button-secondary-background-color: transparent;
+$txs-button-secondary-border-color: rgba(255, 255, 255, 0.5);
+$txs-button-secondary-text-color: rgba(255, 255, 255, 0.5);
+$txs-button-secondary-focus-background-color: $txs-button-secondary-background-color;
+$txs-button-secondary-focus-border-color: rgba(255, 255, 255, 0.9);
+$txs-button-secondary-focus-text-color: $txs-button-secondary-text-color;
+$txs-button-secondary-active-background-color: transparent;
+$txs-button-secondary-active-border-color: rgba(255, 255, 255, 0.9);
+$txs-button-secondary-active-text-color: rgba(255, 255, 255, 0.9);
+
+/*** Decorative elements */
+$txs-hr-color-1: rgba(255, 255, 255, 0.3);
+$txs-hr-color-2: rgba(255, 255, 255, 0.9);
+
+/*** Component: Card */
+$txs-card-background-image-clip: padding-box;
+$txs-card-background-image-position: top center;
+$txs-card-background-image-size: cover;
+$txs-card-border-color-1: rgba(255, 255, 255, 0.3);
+$txs-card-border-color-2: rgba(255, 255, 255, 0.9);
+$txs-card-padding: 1rem 2rem;
+$txs-card-padding-between-image-and-text: 1.5rem;
+$txs-card-max-image-percent-of-content: 25%;
+$txs-card-header-margin: 0.5rem 0.5rem 0 0.5rem;
+$txs-card-header-font-size: 1.5rem;
+$txs-card-header-line-height: 2rem;
+$txs-card-header-text-color: $txs-body-text-color;
+$txs-card-desc-margin: 0 0.5rem 0.5rem 0.5rem;
+$txs-card-desc-font-size: 1rem;
+$txs-card-desc-line-height: 1.8rem;
+$txs-card-desc-text-color: $txs-body-text-color;
+$txs-card-links-margin: 0 0.5rem 0.5rem 0.5rem;
+$txs-card-links-item-margin: 0;
+$txs-card-links-item-font-size: 1rem;
+$txs-card-links-item-line-height: 2rem;
+
+/*** Component: Tabs */
+$txs-tabs-header-border-color-1: rgba(255, 255, 255, 0.3);
+$txs-tabs-header-border-color-2: rgba(255, 255, 255, 0.9);
+$txs-tabs-header-font-size: 1.5rem;
+$txs-tabs-header-padding: 0.5rem 1rem;
+$txs-tabs-header-text-color: $txs-body-text-color;
+$txs-tabs-header-active-text-color: $txs-tabs-header-text-color;
+$txs-tabs-header-active-border-color: orange;
+
+/*** Component: Navigation */
+$txs-nav-item-font-size: 1.5rem;
+$txs-nav-item-margin: 0.5rem 0;
+$txs-nav-item-padding: 0.5rem 1rem;
+$txs-nav-item-background-color: transparent;
+$txs-nav-item-text-color: $txs-body-text-color;
+$txs-nav-item-hover-background-color: $txs-body-text-color;
+$txs-nav-item-hover-text-color: invert($txs-body-text-color);
+$txs-nav-mobile-background-color: darken($txs-body-background-color, 5%);
+$txs-nav-mobile-border-color: $txs-body-text-color;
+$txs-nav-mobile-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+$txs-nav-mobile-item-margin: $txs-nav-item-margin;
+$txs-nav-mobile-item-padding: $txs-nav-item-padding;
+$txs-nav-mobile-text-color: $txs-body-text-color;
+$txs-nav-mobile-trigger-left: 0.5rem;
+$txs-nav-mobile-trigger-top: 0.5rem;
+$txs-nav-mobile-trigger-size: 2rem;

@@ -1,6 +1,6 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
+  "name": "taxes-moe",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "./bin/www"
@@ -17,7 +17,9 @@
     "hexo-generator-tag": "^0.2.0",
     "hexo-renderer-ejs": "^0.3.0",
     "hexo-renderer-marked": "^0.3.0",
+    "hexo-renderer-scss": "^1.2.0",
     "hexo-renderer-stylus": "^0.3.3",
-    "hexo-server": "^0.3.1"
+    "hexo-server": "^0.3.1",
+    "taxes-ds": "taxes-dev/taxes-ds"
   }
 }

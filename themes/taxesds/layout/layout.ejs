@@ -1,0 +1,18 @@
+<%- partial('_partial/head') %>
+
+<body>
+  <div id="content" class="txs--grid">
+    <div class="txs--grid__row">
+      <header id="header" class="txs--grid__column"><%- partial('_partial/header') %></header>
+    </div>
+    <div class="txs--grid__row">
+      <div id="main-col" class="txs--grid__column -span-66"><%- body %></div>
+      <aside id="sidebar" class="txs--grid__column -span-33"><%- partial('_partial/sidebar') %></aside>
+    </div>
+    <div class="txs--grid__row">
+      <footer id="footer" class="txs--grid_column"><%- partial('_partial/footer') %></footer>
+    </div>
+  </div>
+  <%- partial('_partial/after_footer') %>
+</body>
+</html>

@@ -1,0 +1,27 @@
+@mixin unlinkify() {
+    a,
+    a:hover,
+    a:focus,
+    a:visited {
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: none;
+    }
+}
+
+#site-title {
+    @include unlinkify();
+}
+
+.post {
+    margin-bottom: 1.5rem;
+    time,
+    .title {
+        @include unlinkify();
+    }
+    img,
+    video {
+        max-width: 100%;
+        height: auto;
+        border: none;
+    }
+}
