@@ -6,17 +6,21 @@
 
 /*** General */
 $txs-namespace: "txs";
-$txs-body-background-color: #000000;
-$txs-body-text-color: rgba(255, 255, 255, 0.9);
+$txs-body-background-color: #f0ead6;
+$txs-body-text-color: rgba(0, 0, 0, 0.9);
 
 /*** Typography */
 $txs-font-path: "../fonts"; // relative to CSS output folder
 $txs-font-use-fira-sans: false; // controls whether or not to import Fira Sans type face
 $txs-font-use-fira-mono: false; // controls whether or not to import Fira Mono type face
-$txs-body-text-font: "Fira Sans", Arial, Helvetica, sans-serif;
-$txs-body-header-font: "Fira Sans", Arial, Helvetica, sans-serif;
-$txs-body-monospace-font: "Fira Mono", monospace;
-$txs-body-text-size: 16px;
+$txs-body-text-font: "Alice", Arial, Helvetica, sans-serif;
+$txs-body-text-font-weight: 400;
+$txs-body-text-font-weight-strong: 700;
+$txs-body-header-font: "Fugaz One", Arial, Helvetica, sans-serif;
+$txs-body-header-font-weight: 400;
+$txs-body-monospace-font: "Source Code Pro", monospace;
+$txs-body-monospace-font-weight: 400;
+$txs-body-text-size: 18px;
 $txs-body-text-line-height: 1.5em;
 $txs-body-padding: 1em 2em;
 $txs-h1-margin: 0.5em 0 0 0;
@@ -87,9 +91,9 @@ $txs-grid-column-gutter: 20px;
 $txs-grid-column-padding: 10px;
 
 /*** Links */
-$txs-link-color: orange;
-$txs-link-color-hover: white;
-$txs-link-color-active: white;
+$txs-link-color: #247ba0;
+$txs-link-color-hover: #5c9e93;
+$txs-link-color-active: #5c9e93;
 
 /*** Buttons */
 $txs-button-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
@@ -130,8 +134,8 @@ $txs-button-secondary-active-border-color: rgba(255, 255, 255, 0.9);
 $txs-button-secondary-active-text-color: rgba(255, 255, 255, 0.9);
 
 /*** Decorative elements */
-$txs-hr-color-1: rgba(255, 255, 255, 0.3);
-$txs-hr-color-2: rgba(255, 255, 255, 0.9);
+$txs-hr-color-1: rgba(174, 173, 240, 0.3);
+$txs-hr-color-2: rgba(86, 86, 118, 0.9);
 
 /*** Component: Card */
 $txs-card-background-image-clip: padding-box;

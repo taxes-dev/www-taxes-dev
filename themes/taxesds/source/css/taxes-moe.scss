@@ -1,27 +1,94 @@
-@mixin unlinkify() {
+@import "variables";
+
+@mixin unlinkify($color: rgba(0, 0, 0, 0.9), $hover-color: #5c9e93) {
     a,
-    a:hover,
-    a:focus,
     a:visited {
-        color: rgba(255, 255, 255, 0.9);
+        color: $color;
         text-decoration: none;
+    }
+    a:hover,
+    a:focus {
+        color: $hover-color;
     }
 }
 
-#site-title {
-    @include unlinkify();
+#header {
+    padding: 0;
+    #main-nav {
+        margin-top: 1.2rem;
+        float: right;
+        @media only screen and (max-width: $txs-nav-bp-mobile) {
+            float: none;
+        }
+    }
+    #site-title {
+        @include unlinkify();
+    }
+    .txs--grid__row {
+        margin-bottom: 0;
+    }
 }
+
 
 .post {
     margin-bottom: 1.5rem;
-    time,
+    time {
+        @include unlinkify(#565676);
+    }
     .title {
         @include unlinkify();
+    }
+    .post-footer {
+        .txs--grid__column {
+            padding: 0;
+            &:nth-child(2) {
+                text-align: right;
+            }
+        }
     }
     img,
     video {
         max-width: 100%;
         height: auto;
         border: none;
+    }
+}
+
+#sidebar {
+    .search {
+        input[type="search"] {
+            width: 100%;
+            border-radius: 2rem;
+            border: 1px solid #565676;
+            height: 2rem;
+            font-size: 1rem;
+            padding: 0 1rem;
+            font-family: $txs-body-monospace-font;
+            color: rgba(0, 0, 0, 0.9);
+        }
+    }
+    .recent-posts {
+        margin-top: 1rem;
+        .entry {
+            margin-left: 0;
+            margin-top: 0;
+            li {
+                line-height: 1.5em;
+                margin-bottom: 0.5em;
+                .recent-post-date {
+                    display: block;
+                    margin-top: -0.5em;
+                    font-size: 80%;
+                    color: #565676;
+                }
+            }
+        }
+    }
+}
+
+#page-nav {
+    .page-number {
+        display: inline-block;
+        margin: 0 0.5rem;
     }
 }

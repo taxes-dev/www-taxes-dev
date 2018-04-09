@@ -1,8 +1,8 @@
 <div class="txs--grid">
   <div class="txs--grid__row">
     <div id="site-title" class="txs--grid__column">
-      <h1 class="txs--h3"><a href="<%- config.root %>"><%= config.title %></a></h1>
-      <h4 class="txs--h4"><a href="<%- config.root %>"><% if (config.subtitle){ %><%= config.subtitle %><% } %></a></h4>
+      <h1 class="txs--h2"><a href="<%- config.root %>"><%= config.title %></a></h1>
+      <% if (config.subtitle){ %><h4 class="txs--h4"><a href="<%- config.root %>"><%= config.subtitle %></a></h4><% } %>
     </div>
   
     <div class="txs--grid__column">
@@ -14,6 +14,12 @@
           <% } %>
           </div>
       </nav>
+    </div>
+  </div>
+
+  <div class="txs--grid__row">
+    <div class="txs--grid__column">
+      <hr class="txs--hr">
     </div>
   </div>
 </div>

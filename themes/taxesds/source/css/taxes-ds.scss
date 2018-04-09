@@ -17,32 +17,34 @@
  @import "components/nav";
 
  // extends some of the typography elements to override the plain markup emitted by hexo
-.post .post-content .entry {
-    p {
-        @extend .txs--p;
-    }
-    h1, h2 {
-        @extend .txs--h4;
-    }
-    h3 {
-        @extend .txs--h5;
-    }
-    h4, h5, h6 {
-        @extend .txs--h6;
-    }
-    code {
-        @extend .txs--tt;
-    }
-    ul {
-        @extend .txs--ul;
-        li {
-            @extend .txs--ul__li;
+.post, .page {
+    .post-content .entry {
+        p {
+            @extend .txs--p;
         }
-    }
-    ol {
-        @extend .txs--ol;
-        li {
-            @extend .txs--ol__li;
+        h1, h2 {
+            @extend .txs--h4;
+        }
+        h3 {
+            @extend .txs--h5;
+        }
+        h4, h5, h6 {
+            @extend .txs--h6;
+        }
+        code {
+            @extend .txs--tt;
+        }
+        ul {
+            @extend .txs--ul;
+            li {
+                @extend .txs--ul__li;
+            }
+        }
+        ol {
+            @extend .txs--ol;
+            li {
+                @extend .txs--ol__li;
+            }
         }
     }
 }
