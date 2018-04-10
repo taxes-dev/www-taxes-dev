@@ -14,5 +14,11 @@
     </div>
   </div>
   <%- partial('_partial/after_footer') %>
+  <script src="<%- config.root %>js/bundle.js"></script>
+  <script>
+    $(function() {
+      taxesMobileNav('.txs--nav');
+    });
+  </script>
 </body>
 </html>

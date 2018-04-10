@@ -12,6 +12,20 @@
     }
 }
 
+body {
+    background-image: url(images/taxes.png);
+    background-attachment: fixed;
+    background-position: bottom 0 right 50px;
+    background-repeat: no-repeat;
+    @media only screen and (max-width: $txs-nav-bp-mobile) {
+        background-position: center;
+        padding: 0;
+    #content {
+                background-color: rgba(240,234,214,0.8);
+        }
+    }
+}
+
 #header {
     padding: 0;
     #main-nav {
@@ -41,8 +55,10 @@
     .post-footer {
         .txs--grid__column {
             padding: 0;
-            &:nth-child(2) {
-                text-align: right;
+            @media only screen and (min-width: $txs-nav-bp-mobile) {
+                &:nth-child(2) {
+                    text-align: right;
+                }
             }
         }
     }
