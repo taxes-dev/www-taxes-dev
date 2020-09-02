@@ -1,5 +1,6 @@
 <% if (site.tags.length){ %>
 <div class="widget tagcloud">
+  <img src="<%- config.root %>images/taxes.png" style="width:100%">
   <h5 class="title txs--h5"><%= __('tagcloud') %></h5>
   <div class="entry txs--p">
     <%- tagcloud(site.tags, {}) %>

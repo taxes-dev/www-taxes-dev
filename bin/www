@@ -1,5 +1,0 @@
-#!/bin/sh
-export PORT=15401
-export NODE_ENV=production
-cd ${appDir}
-/usr/local/bin/hexo server -s -p $PORT

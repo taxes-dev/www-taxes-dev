@@ -51,11 +51,11 @@
   <meta name="twitter:title" content="<%= config.title %>">
   <% } %>
   <% if (page.card_image) { %>
-  <meta name="twitter:image" content="https://taxes.moe<%= url_for(page.card_image) %>">
-  <meta name="og:image" content="https://taxes.moe<%= url_for(page.card_image) %>">
+  <meta name="twitter:image" content="https://taxes.dev<%= url_for(page.card_image) %>">
+  <meta name="og:image" content="https://taxes.dev<%= url_for(page.card_image) %>">
   <% } else { %>
-  <meta name="twitter:image" content="https://taxes.moe/twitter_400x400.jpg">
-  <meta name="og:image" content="https://taxes.moe/twitter_400x400.jpg">
+  <meta name="twitter:image" content="https://taxes.dev/twitter_400x400.jpg">
+  <meta name="og:image" content="https://taxes.dev/twitter_400x400.jpg">
   <% } %>
 
   <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">
