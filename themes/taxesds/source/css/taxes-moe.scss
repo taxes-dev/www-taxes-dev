@@ -34,6 +34,9 @@
 
 .post {
     margin-bottom: 1.5rem;
+    header {
+        margin-bottom: 1.5em;
+    }
     time {
         @include unlinkify(#565676);
     }
@@ -49,6 +52,11 @@
                 }
             }
         }
+    }
+    small { font-size: 80%; }
+    blockquote {
+        margin: 0 4em;
+        font-style: italic;
     }
     img,
     video {
