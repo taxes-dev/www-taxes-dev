@@ -76,7 +76,7 @@ Lastly, if I had to do this over, I would probably suggest going with an AMD car
 
 Luckily I could fix that. From [this page](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF#.22Error_43:_Driver_failed_to_load.22_on_Nvidia_GPUs_passed_to_Windows_VMs), you just add some additional configuration to hide virtualization from the Windows guest:
 
-```xml-doc
+```xml
 ...
 
 <features>
