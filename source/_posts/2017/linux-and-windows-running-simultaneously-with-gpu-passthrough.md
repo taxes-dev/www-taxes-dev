@@ -10,6 +10,14 @@ tags:
     - vm
     - windows
 ---
+<div class="updated">
+
+**Updated September 2020:** I still get quite a few hits on this old guide, so welcome! If you're looking for some more recently created alternatives to complement what I've written below, I also recommend you check out these two:
+
+* [GPU passthrough tutorial](https://github.com/bryansteiner/gpu-passthrough-tutorial) by bryansteiner
+* [VFIO Single GPU Passthrough Configuration](https://gitlab.com/Karuri/vfio) by Maagu Karuri
+</div>
+
 Wherein I describe the process where I was able to get the "perfect" setup (for my purposes anyways) with Linux and Windows coexisting peacefully on one machine.
 
 a.k.a. "Oh yeah, I have a blog, I should use this thing."
@@ -68,7 +76,7 @@ Lastly, if I had to do this over, I would probably suggest going with an AMD car
 
 Luckily I could fix that. From [this page](https://wiki.archlinux.org/index.php/PCI_passthrough_via_OVMF#.22Error_43:_Driver_failed_to_load.22_on_Nvidia_GPUs_passed_to_Windows_VMs), you just add some additional configuration to hide virtualization from the Windows guest:
 
-```
+```xml-doc
 ...
 
 <features>
