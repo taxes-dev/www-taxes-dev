@@ -203,6 +203,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"argparse@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "argparse@npm:2.0.1"
+  checksum: 160b7a25d2a7097fd5fdf25eb8a99e037340078f70e6c7cfdef305837ed14d54570b2b13261bcae26c8cd44ad6e9a7136a0110d815ac65a7891c69c7bf2f4afd
+  languageName: node
+  linkType: hard
+
 "arr-diff@npm:^4.0.0":
   version: 4.0.0
   resolution: "arr-diff@npm:4.0.0"
@@ -359,15 +366,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"block-stream@npm:*":
-  version: 0.0.9
-  resolution: "block-stream@npm:0.0.9"
-  dependencies:
-    inherits: ~2.0.0
-  checksum: 8018fa57aebcb00899e6d6e035d7fdab518d217156396e7442aac718c890ede0ce3e5258659f060cf3a558b40d771e809f4f4b706520ca13de3be5d8b6ae10e7
-  languageName: node
-  linkType: hard
-
 "bluebird@npm:^3.2.2, bluebird@npm:^3.5.1, bluebird@npm:^3.5.2, bluebird@npm:^3.5.5":
   version: 3.7.2
   resolution: "bluebird@npm:3.7.2"
@@ -375,7 +373,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"body-parser@npm:1.19.0":
+"body-parser@npm:1.19.0, body-parser@npm:^1.19.0":
   version: 1.19.0
   resolution: "body-parser@npm:1.19.0"
   dependencies:
@@ -774,12 +772,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"concatenate-js-middleware@npm:^0.0.2":
-  version: 0.0.2
-  resolution: "concatenate-js-middleware@npm:0.0.2"
+"concatenate-js-middleware@npm:^0.0.4":
+  version: 0.0.4
+  resolution: "concatenate-js-middleware@npm:0.0.4"
   dependencies:
     uglify-js: ^3.2.2
-  checksum: dab54fb66f8cb6e4358e0d627738f6a93e586ed5e0b796ebbcecf10bab8c9817fe4f4369a4f563452a8d96852f91a90b1aeb7b2cc9a905c5bdf414668b8ca64a
+  checksum: 40046079502b9bb24812d704107f1c31b1858fbcec4baf87b4ef3ef78cf1cd51658e167babbb8bf94b96a4c612068e714f4997735d806d8468c55516b9e5f4c3
   languageName: node
   linkType: hard
 
@@ -828,7 +826,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cookie-parser@npm:^1.4.3":
+"cookie-parser@npm:^1.4.5":
   version: 1.4.5
   resolution: "cookie-parser@npm:1.4.5"
   dependencies:
@@ -866,17 +864,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-spawn@npm:^3.0.0":
-  version: 3.0.1
-  resolution: "cross-spawn@npm:3.0.1"
-  dependencies:
-    lru-cache: ^4.0.1
-    which: ^1.2.9
-  checksum: 1228429c247d718c8ee0f5b63139de10fbcd8638098ec4c2449c025230eea71b527daabe681bfd5843051b85c26647821c81aaad12f736587075cda5a001767b
-  languageName: node
-  linkType: hard
-
-"cross-spawn@npm:^7.0.0":
+"cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.3":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3"
   dependencies:
@@ -980,7 +968,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:^4.1.0":
+"debug@npm:4, debug@npm:^4.1.0, debug@npm:^4.3.1":
   version: 4.3.2
   resolution: "debug@npm:4.3.2"
   dependencies:
@@ -1287,7 +1275,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"express@npm:^4.16.2":
+"express@npm:^4.17.1":
   version: 4.17.1
   resolution: "express@npm:4.17.1"
   dependencies:
@@ -1551,18 +1539,6 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"fstream@npm:^1.0.0, fstream@npm:^1.0.12":
-  version: 1.0.12
-  resolution: "fstream@npm:1.0.12"
-  dependencies:
-    graceful-fs: ^4.1.2
-    inherits: ~2.0.0
-    mkdirp: ">=0.5 0"
-    rimraf: 2
-  checksum: 61c76d2c8d702d0233efb1bdaaff49486d2ac523562167f9900151936ce229a6fc96f04236feeb3cb88ce65660c665781ad080d5f06c115f0987c9c27db9fb9d
-  languageName: node
-  linkType: hard
-
 "function-bind@npm:^1.1.1":
   version: 1.1.1
   resolution: "function-bind@npm:1.1.1"
@@ -1713,16 +1689,16 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"graceful-fs@npm:^4.2.6":
+"graceful-fs@npm:^4.2.3, graceful-fs@npm:^4.2.6":
   version: 4.2.6
   resolution: "graceful-fs@npm:4.2.6"
   checksum: 84d39c7756892553da990a9db7e45f844b3309b37b5a00174cbb4748476f2250c54f24594d4d252f64f085c65c2fdac7c809419bf6d55f0e6e42eb07ac0f5bf2
   languageName: node
   linkType: hard
 
-"handlebars@npm:4.7.6":
-  version: 4.7.6
-  resolution: "handlebars@npm:4.7.6"
+"handlebars@npm:4.7.7":
+  version: 4.7.7
+  resolution: "handlebars@npm:4.7.7"
   dependencies:
     minimist: ^1.2.5
     neo-async: ^2.6.0
@@ -1734,7 +1710,7 @@ fsevents@~2.3.1:
       optional: true
   bin:
     handlebars: bin/handlebars
-  checksum: 50276715da3e410f1d485635029b77e09b8c9244d9e49119d5f39ed978a3d44ce94f5d6120efeb707da0ba9dd0cddf140d8d2ac160721d93aa9f4234474ad318
+  checksum: 2df9a6b422e2ccc0b7ca53f7a1f9915b47d19bf3fd372824a87e2a28b7952fa2cb3348cbe33a87ef49ee04f42d10359aab44819ca8d680ee3a5b53d48bd062a1
   languageName: node
   linkType: hard
 
@@ -1833,13 +1809,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"hbs@npm:^4.0.1":
-  version: 4.1.1
-  resolution: "hbs@npm:4.1.1"
+"hbs@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "hbs@npm:4.1.2"
   dependencies:
-    handlebars: 4.7.6
+    handlebars: 4.7.7
     walk: 2.3.14
-  checksum: 5f470ce5e17f6065e51af9fe9efad3f7c26c5d41a5535a1b8bddb4ed347909917de3b1f3691f24db42ed4f43a66d83752a971d08bc24d59e29fa2d65755f6dc0
+  checksum: 402d999481c60d2e1e87713c931474769cd14d78522f32a026e80a949661aec77662e7146651f3cfa78e0ddae7155dd380c212d9e3cd8731d9673cfd67949dc5
   languageName: node
   linkType: hard
 
@@ -1975,23 +1951,23 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"hexo-renderer-marked@npm:^3.3.0":
-  version: 3.3.0
-  resolution: "hexo-renderer-marked@npm:3.3.0"
+"hexo-renderer-marked@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "hexo-renderer-marked@npm:4.0.0"
   dependencies:
     hexo-util: ^2.1.0
-    marked: ^1.0.0
-  checksum: 97f610ba4583e46dffa96c6c3f919551f9aac9dbb3a615008c1b212100822a2bc5d600c1819adbf547065de09cd4e7de8d2ee768bb3933f70369df5dc413628f
+    marked: ^2.0.0
+  checksum: 1b26dcffc572bad2001b1b4fce9854d3c4d015637a55b4d59233b8a6c686ad54b1a322140e713a9ccbef9e52868f3d030a91f52121f8fc9593cf3258ce9e0fe6
   languageName: node
   linkType: hard
 
-"hexo-renderer-scss@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "hexo-renderer-scss@npm:1.2.0"
+"hexo-renderer-scss@https://git.taxes.dev/taxes/hexo-renderer-scss.git":
+  version: 0.0.1-taxes
+  resolution: "hexo-renderer-scss@https://git.taxes.dev/taxes/hexo-renderer-scss.git#commit=0645e411de4bf159fc8bcad1f9029fcb99e34ccd"
   dependencies:
-    node-sass: ^4.7.2
-    node-sass-magic-importer: ^5.1.1
-  checksum: 9261ab6d3c28f05792f04a9bbccde75f0aad4d276a755a0e645af98869d28b872cc697f0e33e767a651182ac9f9ec211e58f92b270614cae1dbd4002a9f4605a
+    node-sass: ^6.0.0
+    node-sass-magic-importer: ^5.3.2
+  checksum: 9fb138265ea20767c08b18f955a41f932b7533da43e8cb3d125fcce5748b3424fec137fe542abd0bc28ac83dede732aeda617887f7945519fa42161fba995adf
   languageName: node
   linkType: hard
 
@@ -2038,9 +2014,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"hexo@npm:^5.3.0":
-  version: 5.3.0
-  resolution: "hexo@npm:5.3.0"
+"hexo@npm:^5.4.0":
+  version: 5.4.0
+  resolution: "hexo@npm:5.4.0"
   dependencies:
     abbrev: ^1.1.1
     archy: ^1.0.0
@@ -2052,7 +2028,7 @@ fsevents@~2.3.1:
     hexo-i18n: ^1.0.0
     hexo-log: ^2.0.0
     hexo-util: ^2.4.0
-    js-yaml: ^3.12.0
+    js-yaml: ^4.0.0
     micromatch: ^4.0.2
     moment: ^2.22.2
     moment-timezone: ^0.5.21
@@ -2066,7 +2042,7 @@ fsevents@~2.3.1:
     warehouse: ^4.0.0
   bin:
     hexo: bin/hexo
-  checksum: cb0a231cf421352f190577ae4737cc1726e1f1df8ef05a80eb96a4803833e1be3b9d14cae95d624ae84870b70c63fcd7b5dddc6624813419a19c7df5bda38dab
+  checksum: b23c94c9e7fe72457785d04e08fb146cf7cc5c3f4fef7d0a48073880e47b3771905cbb6714ac660ac95d924da8d74e9e7d0fb3107912e8ff49a3de4c30d83e9b
   languageName: node
   linkType: hard
 
@@ -2204,18 +2180,6 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"in-publish@npm:^2.0.0":
-  version: 2.0.1
-  resolution: "in-publish@npm:2.0.1"
-  bin:
-    in-install: in-install.js
-    in-publish: in-publish.js
-    not-in-install: not-in-install.js
-    not-in-publish: not-in-publish.js
-  checksum: 8d2296b25310b5288e7f3921354cdc58f55a1e2c75c261b2ca04faf7fd20f77f221c0885592135bf595e9bf4245a3cf493b85d192f61e295a0ae44eb7c7989db
-  languageName: node
-  linkType: hard
-
 "indent-string@npm:^2.1.0":
   version: 2.1.0
   resolution: "indent-string@npm:2.1.0"
@@ -2249,7 +2213,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"inherits@npm:2, inherits@npm:2.0.4, inherits@npm:^2.0.3, inherits@npm:~2.0.0, inherits@npm:~2.0.3":
+"inherits@npm:2, inherits@npm:2.0.4, inherits@npm:^2.0.3, inherits@npm:~2.0.3":
   version: 2.0.4
   resolution: "inherits@npm:2.0.4"
   checksum: 98426da247ddfc3dcd7d7daedd90c3ca32d5b08deca08949726f12d49232aef94772a07b36cf4ff833e105ae2ef931777f6de4a6dd8245a216b9299ad4a50bea
@@ -2562,13 +2526,6 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"jquery@npm:^3.3.1":
-  version: 3.5.1
-  resolution: "jquery@npm:3.5.1"
-  checksum: c50818c84837902a60938c85786feb612f346a9918f7285409d605449460790b3815ad8aaf5806f19e89f1a79b27d327802b421ab354fe213f3fd1801e3562e6
-  languageName: node
-  linkType: hard
-
 "js-base64@npm:^2.1.8":
   version: 2.6.4
   resolution: "js-base64@npm:2.6.4"
@@ -2576,7 +2533,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"js-yaml@npm:^3.12.0, js-yaml@npm:^3.13.1":
+"js-yaml@npm:^3.13.1":
   version: 3.14.1
   resolution: "js-yaml@npm:3.14.1"
   dependencies:
@@ -2585,6 +2542,17 @@ fsevents@~2.3.1:
   bin:
     js-yaml: bin/js-yaml.js
   checksum: 46b61f889796a20d16b0b64580a01b6a02b2e45c1a2744906346da54d07e14cde764e887ab6d1512d8b2541c63711bd4b75859c28eb99605baf59fa173fc38c2
+  languageName: node
+  linkType: hard
+
+"js-yaml@npm:^4.0.0":
+  version: 4.1.0
+  resolution: "js-yaml@npm:4.1.0"
+  dependencies:
+    argparse: ^2.0.1
+  bin:
+    js-yaml: bin/js-yaml.js
+  checksum: 8973cf4296c944cc2551d1e3d3d064e7de0d0a6db3f7bafe40339ee9e5e0329560b52c4b8492b9b22365404c9be0822b62340ab49884e1dedfcc7ff80158abe0
   languageName: node
   linkType: hard
 
@@ -2732,16 +2700,6 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"lru-cache@npm:^4.0.1":
-  version: 4.1.5
-  resolution: "lru-cache@npm:4.1.5"
-  dependencies:
-    pseudomap: ^1.0.2
-    yallist: ^2.1.2
-  checksum: 6a098d23629357451d4324e1e4fefccdd6df316df29e25571c6148220ced923258381ebeafdf919f90e28c780b650427390582618c1d5fe097873e656d062511
-  languageName: node
-  linkType: hard
-
 "lru-cache@npm:^6.0.0":
   version: 6.0.0
   resolution: "lru-cache@npm:6.0.0"
@@ -2797,12 +2755,12 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"marked@npm:^1.0.0":
-  version: 1.2.9
-  resolution: "marked@npm:1.2.9"
+"marked@npm:^2.0.0":
+  version: 2.0.6
+  resolution: "marked@npm:2.0.6"
   bin:
     marked: bin/marked
-  checksum: d6cce03ea4a069e31d8e3c6ef99a2aee62aa6b309462a380c1f57caaec6aad0d9d62f1195e45230b838a301484a7a94d2bc70ba07bfddb003f8685710708874d
+  checksum: 73c10b8531521f16ba79b4f9cfd6d35a9e454ab795586aaff004a5f88c2db8e669c7db4e4079123823baf596df2a5a5aa39e50663eb8b86b25a59bc0d5f4b5b3
   languageName: node
   linkType: hard
 
@@ -3013,7 +2971,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"mkdirp@npm:0.5.x, mkdirp@npm:>=0.5 0, mkdirp@npm:^0.5.0, mkdirp@npm:^0.5.1":
+"mkdirp@npm:0.5.x, mkdirp@npm:^0.5.1":
   version: 0.5.5
   resolution: "mkdirp@npm:0.5.5"
   dependencies:
@@ -3160,25 +3118,23 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"node-gyp@npm:^3.8.0":
-  version: 3.8.0
-  resolution: "node-gyp@npm:3.8.0"
+"node-gyp@npm:^7.1.0":
+  version: 7.1.2
+  resolution: "node-gyp@npm:7.1.2"
   dependencies:
-    fstream: ^1.0.0
-    glob: ^7.0.3
-    graceful-fs: ^4.1.2
-    mkdirp: ^0.5.0
-    nopt: 2 || 3
-    npmlog: 0 || 1 || 2 || 3 || 4
-    osenv: 0
-    request: ^2.87.0
-    rimraf: 2
-    semver: ~5.3.0
-    tar: ^2.0.0
-    which: 1
+    env-paths: ^2.2.0
+    glob: ^7.1.4
+    graceful-fs: ^4.2.3
+    nopt: ^5.0.0
+    npmlog: ^4.1.2
+    request: ^2.88.2
+    rimraf: ^3.0.2
+    semver: ^7.3.2
+    tar: ^6.0.2
+    which: ^2.0.2
   bin:
-    node-gyp: ./bin/node-gyp.js
-  checksum: bbea370ec5884427c5219f0e8392431c43d9f448b66aee340188d5fed2c86305dd51fdcf75678662f107cfd6baf6b4d10d53e3c62410002e4d3276045c956dbe
+    node-gyp: bin/node-gyp.js
+  checksum: fca9ecb1be01f707b76c2aec01f0f2ef4ff45c4e24df378c01a4a2c93b4a8172b47ad59f07af91c54a797a8a77fc72e087e29a97a52c892df507245530c46bfa
   languageName: node
   linkType: hard
 
@@ -3202,7 +3158,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"node-sass-magic-importer@npm:^5.1.1":
+"node-sass-magic-importer@npm:^5.3.2":
   version: 5.3.2
   resolution: "node-sass-magic-importer@npm:5.3.2"
   dependencies:
@@ -3217,32 +3173,21 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"node-sass-middleware@npm:^0.11.0":
-  version: 0.11.0
-  resolution: "node-sass-middleware@npm:0.11.0"
-  dependencies:
-    mkdirp: ^0.5.1
-    node-sass: ^4.3.0
-  checksum: f286faea6df06582e826c75025cf3ac01dcb50e917f1122cf3a8bc88647bc1560198068c014d357b3a637509dae1f900acb4143334b1d22b5ec441b6a4687788
-  languageName: node
-  linkType: hard
-
-"node-sass@npm:^4.3.0, node-sass@npm:^4.7.2":
-  version: 4.14.1
-  resolution: "node-sass@npm:4.14.1"
+"node-sass@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "node-sass@npm:6.0.0"
   dependencies:
     async-foreach: ^0.1.3
     chalk: ^1.1.1
-    cross-spawn: ^3.0.0
+    cross-spawn: ^7.0.3
     gaze: ^1.0.0
     get-stdin: ^4.0.1
     glob: ^7.0.3
-    in-publish: ^2.0.0
     lodash: ^4.17.15
     meow: ^3.7.0
     mkdirp: ^0.5.1
     nan: ^2.13.2
-    node-gyp: ^3.8.0
+    node-gyp: ^7.1.0
     npmlog: ^4.0.0
     request: ^2.88.0
     sass-graph: 2.2.5
@@ -3250,18 +3195,7 @@ fsevents@~2.3.1:
     true-case-path: ^1.0.2
   bin:
     node-sass: bin/node-sass
-  checksum: eac20417c8ce248eaeb5e12c68737f9d59abcca2679053f1fa42453b555ca544850b66b956a90b9e612cd66e8136f896d5d81b5c25f7c9c28830c742df1b819f
-  languageName: node
-  linkType: hard
-
-"nopt@npm:2 || 3":
-  version: 3.0.6
-  resolution: "nopt@npm:3.0.6"
-  dependencies:
-    abbrev: 1
-  bin:
-    nopt: ./bin/nopt.js
-  checksum: cb2105d5286b96243d8b71964ccbce04aa8776d6479b8a3b567c2b5b3da86b35ff2b95c22e443337724d13acb60db9b107c64851424d9d60a088a461a976da29
+  checksum: 982c26d182c289964fc9ccd2cbcbcd69d5e770fe7ff540a0cefe98392727ca8987d56c24dc05bec81fd8cea935e2caa63ddc514aa4af43630737c1ab74221a5a
   languageName: node
   linkType: hard
 
@@ -3295,7 +3229,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"npmlog@npm:0 || 1 || 2 || 3 || 4, npmlog@npm:^4.0.0, npmlog@npm:^4.1.2":
+"npmlog@npm:^4.0.0, npmlog@npm:^4.1.2":
   version: 4.1.2
   resolution: "npmlog@npm:4.1.2"
   dependencies:
@@ -3413,30 +3347,6 @@ fsevents@~2.3.1:
     is-docker: ^2.0.0
     is-wsl: ^2.1.1
   checksum: cb3ca8bc368ed08af08f95564300ee4c0242be185e2eb760ee3b418b9448535cae03e3451331084dfe14a90ffeb43cf198759e0b79a3d7b53e7fcff2024e2dd1
-  languageName: node
-  linkType: hard
-
-"os-homedir@npm:^1.0.0":
-  version: 1.0.2
-  resolution: "os-homedir@npm:1.0.2"
-  checksum: 725256246b2cec353250ec46442e3cfa7bc96ef92285d448a90f12f4bbd78c1bf087051b2cef0382da572e1a9ebc8aa24bd0940a3bdc633c3e3012eef1dc6848
-  languageName: node
-  linkType: hard
-
-"os-tmpdir@npm:^1.0.0":
-  version: 1.0.2
-  resolution: "os-tmpdir@npm:1.0.2"
-  checksum: ca158a3c2e48748adc7736cdbe4c593723f8ed8581d2aae2f2a30fdb9417d4ba14bed1cd487d47561898a7b1ece88bce69745e9ce0303e1dea9ea7d22d1f1082
-  languageName: node
-  linkType: hard
-
-"osenv@npm:0":
-  version: 0.1.5
-  resolution: "osenv@npm:0.1.5"
-  dependencies:
-    os-homedir: ^1.0.0
-    os-tmpdir: ^1.0.0
-  checksum: 1c7462808c5ff0c2816b11f2f46265a98c395586058f98d73a6deac82955744484b277baedceeb962c419f3b75d0831a77ce7cf38b9e4f20729943ba79d72b08
   languageName: node
   linkType: hard
 
@@ -3725,13 +3635,6 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"pseudomap@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "pseudomap@npm:1.0.2"
-  checksum: 1ad1802645e830d99f9c1db97efc6902d2316b660454633229f636dd59e751d00498dd325d3b18d49f2be990a2c9d28f8bfe6f9b544a8220a5faa2bfb4694bb7
-  languageName: node
-  linkType: hard
-
 "psl@npm:^1.1.28":
   version: 1.8.0
   resolution: "psl@npm:1.8.0"
@@ -3867,7 +3770,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"request@npm:^2.87.0, request@npm:^2.88.0":
+"request@npm:^2.88.0, request@npm:^2.88.2":
   version: 2.88.2
   resolution: "request@npm:2.88.2"
   dependencies:
@@ -3964,17 +3867,6 @@ fsevents@~2.3.1:
   version: 1.2.0
   resolution: "rfdc@npm:1.2.0"
   checksum: 8a5aa06df69ef14646156b83552efe418e21026953a76784fbcc466c92cc01c9a18d9253b698b4bfccfdf6e9486124a84134b4be4509814cec4461e4962107db
-  languageName: node
-  linkType: hard
-
-"rimraf@npm:2":
-  version: 2.7.1
-  resolution: "rimraf@npm:2.7.1"
-  dependencies:
-    glob: ^7.1.3
-  bin:
-    rimraf: ./bin.js
-  checksum: 059efac2838ef917d4d1da1d80e724ad28c120cdf14ca6ed27ca72db2dc70be3e25421cba5947c6ec3d804c1d2bb9a247254653816ee0722bf943ffdd1ae19ef
   languageName: node
   linkType: hard
 
@@ -4082,7 +3974,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.5":
+"semver@npm:^7.3.2, semver@npm:^7.3.5":
   version: 7.3.5
   resolution: "semver@npm:7.3.5"
   dependencies:
@@ -4090,15 +3982,6 @@ fsevents@~2.3.1:
   bin:
     semver: bin/semver.js
   checksum: c53624ddf4b9779bcbf55a1eb8b37074cc44bfeca416f3cc263429408202a8a3c59b00eef8c647d697303bc39b95c022a5c61959221d3814bfb1270ff7c14986
-  languageName: node
-  linkType: hard
-
-"semver@npm:~5.3.0":
-  version: 5.3.0
-  resolution: "semver@npm:5.3.0"
-  bin:
-    semver: ./bin/semver
-  checksum: 8211d9f88e8b4c6c5bd45f4383a4354d252afbf3d35b216b41bf1820913199a8cdeead8ad6d93b11c70a02c575ab0d76a13e35fd335d7f75551645feb5d1af2f
   languageName: node
   linkType: hard
 
@@ -4630,17 +4513,6 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"tar@npm:^2.0.0":
-  version: 2.2.2
-  resolution: "tar@npm:2.2.2"
-  dependencies:
-    block-stream: "*"
-    fstream: ^1.0.12
-    inherits: 2
-  checksum: a8eeafd7eafd143df2034cfec228abc4f7bfec96a988fe6e970e1224e46a91b3cd9f34656574658e5cf31bdf48e3a8b04474a81bbdef65caaeaa19f9239dc1f6
-  languageName: node
-  linkType: hard
-
 "tar@npm:^6.0.2, tar@npm:^6.1.0":
   version: 6.1.0
   resolution: "tar@npm:6.1.0"
@@ -4659,33 +4531,32 @@ fsevents@~2.3.1:
   version: 0.0.0-use.local
   resolution: "taxes-dev@workspace:."
   dependencies:
-    hexo: ^5.3.0
+    hexo: ^5.4.0
     hexo-generator-archive: ^1.0.0
     hexo-generator-category: ^1.0.0
     hexo-generator-feed: ^3.0.0
     hexo-generator-index: ^2.0.0
     hexo-generator-tag: ^1.0.0
     hexo-renderer-ejs: ^1.0.0
-    hexo-renderer-marked: ^3.3.0
-    hexo-renderer-scss: ^1.2.0
+    hexo-renderer-marked: ^4.0.0
+    hexo-renderer-scss: "https://git.taxes.dev/taxes/hexo-renderer-scss.git"
     hexo-renderer-stylus: ^2.0.1
     hexo-server: ^2.0.0
-    taxes-ds: taxes-dev/taxes-ds
+    taxes-ds: "https://git.taxes.dev/taxes/taxes-ds.git"
   languageName: unknown
   linkType: soft
 
-taxes-ds@taxes-dev/taxes-ds:
-  version: 0.3.3
-  resolution: "taxes-ds@https://github.com/taxes-dev/taxes-ds.git#commit=8a452e1f23fd982b3b6319e3feae34babfe4b735"
+"taxes-ds@https://git.taxes.dev/taxes/taxes-ds.git":
+  version: 0.4.0
+  resolution: "taxes-ds@https://git.taxes.dev/taxes/taxes-ds.git#commit=57c4bf55894ed8b7c17eb1109e2348eca39ba68e"
   dependencies:
-    concatenate-js-middleware: ^0.0.2
-    cookie-parser: ^1.4.3
-    express: ^4.16.2
-    hbs: ^4.0.1
-    jquery: ^3.3.1
-    node-sass: ^4.7.2
-    node-sass-middleware: ^0.11.0
-  checksum: 653dfbdde831196dd49ed0710af0b06a6ac2ac9a5e0a3e430d9e1f3eeff31d2409a2a8228b27933f23cc8dbfbc0ff5a1d11a82c0af68fadbeb9810fcce5894e6
+    body-parser: ^1.19.0
+    concatenate-js-middleware: ^0.0.4
+    cookie-parser: ^1.4.5
+    debug: ^4.3.1
+    express: ^4.17.1
+    hbs: ^4.1.2
+  checksum: 25d3d77f082cfb2894950f30f0fce236f24899bb7aa5d85e8767d7e91cb8d4d1a3cd459c5f2df1cc3335e9e9ef106e8712f484525226d057359d54d555de0a47
   languageName: node
   linkType: hard
 
@@ -5025,7 +4896,7 @@ taxes-ds@taxes-dev/taxes-ds:
   languageName: node
   linkType: hard
 
-"which@npm:1, which@npm:^1.2.14, which@npm:^1.2.9":
+"which@npm:^1.2.14":
   version: 1.3.1
   resolution: "which@npm:1.3.1"
   dependencies:
@@ -5085,13 +4956,6 @@ taxes-ds@taxes-dev/taxes-ds:
   version: 4.0.1
   resolution: "y18n@npm:4.0.1"
   checksum: e589620d8d668d696e74730a83731a36a8d782c50379386b142e5b8287388a6ebaf28528e84201c68c206629faed71362c79b201b398eb0c69aa1737635678dd
-  languageName: node
-  linkType: hard
-
-"yallist@npm:^2.1.2":
-  version: 2.1.2
-  resolution: "yallist@npm:2.1.2"
-  checksum: f83e3d18eeba68a0276be2ab09260be3f2a300307e84b1565c620ef71f03f106c3df9bec4c3a91e5fa621a038f8826c19b3786804d3795dd4f999e5b6be66ea3
   languageName: node
   linkType: hard
 

@@ -1,25 +1,25 @@
 {
   "name": "taxes-dev",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
   "scripts": {
     "start": "hexo server"
   },
   "hexo": {
-    "version": "5.3.0"
+    "version": "5.4.0"
   },
   "dependencies": {
-    "hexo": "^5.3.0",
+    "hexo": "^5.4.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^3.0.0",
     "hexo-generator-index": "^2.0.0",
     "hexo-generator-tag": "^1.0.0",
     "hexo-renderer-ejs": "^1.0.0",
-    "hexo-renderer-marked": "^3.3.0",
-    "hexo-renderer-scss": "^1.2.0",
+    "hexo-renderer-marked": "^4.0.0",
+    "hexo-renderer-scss": "https://git.taxes.dev/taxes/hexo-renderer-scss.git",
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^2.0.0",
-    "taxes-ds": "taxes-dev/taxes-ds"
+    "taxes-ds": "https://git.taxes.dev/taxes/taxes-ds.git"
   }
 }
