@@ -59,6 +59,9 @@
         padding: 1em;
         color: #a05a4c;
         background-color: #d4d0d0;
+        p, ul {
+            margin-bottom: 0 !important;
+        }
     }
     small { font-size: 80%; }
     blockquote {
