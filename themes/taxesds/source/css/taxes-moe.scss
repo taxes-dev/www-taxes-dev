@@ -65,8 +65,37 @@
     }
     small { font-size: 80%; }
     blockquote {
-        margin: 0 4em;
+        margin: 0 4em 2em 4em;
         font-style: italic;
+        p {
+            font-size: 80% !important;
+            margin: 0 0 1em 0 !important;
+            line-height: 1.2rem !important;
+        }
+        footer {
+            font-size: 80%;
+            line-height: 1.2rem;
+            &::before {
+                content: '—';
+            }
+            cite {
+                display: block;
+            }
+        }
+    }
+    aside {
+        margin: 0 4em;
+        font-size: 80%;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: #565676;
+        background-color: #d4d0d0;
+        margin: 2em auto;
+        width: 80%;
+        padding: 0.25em 1em;
+        strong { font-weight: 700; }
+        em { font-style: italic; }
+        line-height: 1.2rem;
     }
     img,
     video {
@@ -80,6 +109,7 @@
         padding-top: 30px;
         height: 0;
         overflow: hidden;
+        margin: 30px auto;
         iframe,
         object,
         embed {
