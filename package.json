@@ -1,25 +1,25 @@
 {
   "name": "taxes-dev",
-  "version": "1.3.0",
-  "author": "Havi S. <havi@taxes.dev>",
+  "version": "1.4.0",
+  "author": "Elise S. <el@taxes.dev>",
   "private": true,
   "scripts": {
     "start": "hexo server -p 8000"
   },
   "hexo": {
-    "version": "6.3.0"
+    "version": "7.3.0"
   },
   "dependencies": {
-    "hexo": "^6.3.0",
+    "hexo": "7.3.0",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
     "hexo-generator-feed": "^3.0.0",
-    "hexo-generator-index": "^3.0.0",
+    "hexo-generator-index": "4.0.0",
     "hexo-generator-tag": "^2.0.0",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-marked": "^6.0.0",
+    "hexo-renderer-marked": "6.3.0",
     "hexo-renderer-scss": "https://github.com/taxes-dev/hexo-renderer-scss.git",
-    "hexo-renderer-stylus": "^2.1.0",
+    "hexo-renderer-stylus": "3.0.1",
     "hexo-server": "^3.0.0",
     "taxes-ds": "https://github.com/taxes-dev/taxes-ds.git"
   },
