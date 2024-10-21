@@ -4,7 +4,8 @@
   "author": "Elise S. <el@taxes.dev>",
   "private": true,
   "scripts": {
-    "start": "hexo server -p 8000"
+    "start": "hexo server -p 8000",
+    "build": "hexo generate"
   },
   "hexo": {
     "version": "7.3.0"
@@ -22,6 +23,9 @@
     "hexo-renderer-stylus": "3.0.1",
     "hexo-server": "^3.0.0",
     "taxes-ds": "https://github.com/taxes-dev/taxes-ds.git"
+  },
+  "devDependencies": {
+    "node-gyp": "^3.8.0"
   },
   "packageManager": "yarn@3.2.4"
 }
